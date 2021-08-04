@@ -10,5 +10,89 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+    let lamparas;
+    let marca;
+    let precio = 35;
+    let importeFinal;
+    let ibb;
+
+    marca = document.getElementById ("Marca").value;
+    lamparas = document.getElementById ("txtIdCantidad").value;
+    
+
+    switch (marca) {
+        case "ArgentinaLuz":
+            if (lamparas >= 6){
+                precio = precio - precio * 0.5
+                document.getElementById ("txtIdprecioDescuento").value = precio
+            } 
+            else if (lamparas == 5) {
+                precio = precio - precio * 0.40
+                document.getElementById ("txtIdprecioDescuento").value = precio
+            }
+            else if (lamparas == 4) {
+                precio = precio - precio * 0.35
+                document.getElementById ("txtIdprecioDescuento").value = precio
+            }
+            else if (lamparas == 3) {
+                precio = precio - precio * 0.15
+                document.getElementById ("txtIdprecioDescuento").value = precio}
+            else {
+                document.getElementById ("txtIdprecioDescuento").value = precio
+            }
+            break;
+        case "FelipeLamparas":
+            if (lamparas >= 6){
+                precio = precio - precio * 0.5
+                document.getElementById ("txtIdprecioDescuento").value = precio
+            } 
+            else if (lamparas == 5) {
+                precio = precio - precio * 0.30
+                document.getElementById ("txtIdprecioDescuento").value = precio
+            }
+            else if (lamparas == 4) {
+                precio = precio - precio * 0.20
+                document.getElementById ("txtIdprecioDescuento").value = precio
+            }
+            else if (lamparas == 3) {
+                precio = precio - precio * 0.10
+                document.getElementById ("txtIdprecioDescuento").value = precio}
+            else {
+                document.getElementById ("txtIdprecioDescuento").value = precio}
+            break;
+            case "JeLuz":
+            case "HazIluminacion":
+            case "Osram":
+                if (lamparas >= 6){
+                    precio = precio - precio * 0.5
+                    document.getElementById ("txtIdprecioDescuento").value = precio
+                } 
+                else if (lamparas == 5) {
+                    precio = precio - precio * 0.30
+                    document.getElementById ("txtIdprecioDescuento").value = precio
+                }
+                else if (lamparas == 4) {
+                    precio = precio - precio * 0.20
+                    document.getElementById ("txtIdprecioDescuento").value = precio
+                }
+                else if (lamparas == 3) {
+                    precio = precio - precio * 0.05
+                    document.getElementById ("txtIdprecioDescuento").value = precio}
+                else {
+                    document.getElementById ("txtIdprecioDescuento").value = precio}
+                break;
+               }
+               importeFinal = precio * lamparas
+               if (importeFinal > 120) {
+                   ibb = importeFinal * 0.1
+                   alert ("Tienes que pagar")
+               }
+
+
+            }
+
+       
+            
+       
+           
  	
-}
