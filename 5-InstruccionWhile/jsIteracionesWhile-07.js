@@ -12,12 +12,12 @@ let contador = 0;
 
 do {
 	numero = prompt ("Ingrese el numero")
-	acumulador = numero + acumulador
+	acumulador = acumulador + numero;
 	contador++
 	seguir = prompt("Quiere que lo vuelva a saludar?");
 }while (seguir == 's');
 
-promedio = acumulador / numero
+promedio = acumulador / contador
 
 	document.getElementById("txtIdSuma").value = acumulador;
 	document.getElementById("txtIdPromedio").value = promedio;

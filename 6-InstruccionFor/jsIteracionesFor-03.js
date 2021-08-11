@@ -1,7 +1,18 @@
 function mostrar()
 {
-  let 
+  let repeticiones;
 
-	for (let control; control = parseInt(prompt("Ingresar un numero")); 
+  repeticiones = parseInt(prompt("ingrese numero"));
 
-}//FIN DE LA FUNCIÓN
+  while (isNaN(repeticiones)) {
+    repeticiones = parseInt(prompt("ingrese numero valido"));
+
+  for (let control = 1; control < repeticiones; control++){
+    console.log ("hola utn fra");
+
+  }
+  
+
+ 
+
+}}

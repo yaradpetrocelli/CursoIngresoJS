@@ -1,17 +1,20 @@
 function mostrar()
 {
+	
 
-
-let num;
-let contador=0;
-let acumulador=0;
-
-	do  {
-	contador++;
-    num=parseInt(prompt("Ingrese numero"));
-	acumulador = acumulador + num
-	} while (acumulador > 1000);
-
-	alert("El numero es 1000");
-		
+	for (let control = 1; control <= 10; control++) {
+		document.write (control + "<br>");
 	}
+	
+	}
+
+	/*
+	let num;
+	let suma = 0
+	let contador = 0;
+
+	do {
+		contador++
+		num = parseInt(prompt("ingrese el numero"))
+		suma = suma + numero
+	} while (suma < 1000); */

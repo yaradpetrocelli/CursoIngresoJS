@@ -14,14 +14,12 @@ function comenzar()
   let numero = 1;
   let intento;
   let ingresar;
-  let contador;
+  let contador = 0;
 
   numero = parseInt(document.getElementById("txtIdNumero").value);
   intento = parseInt(document.getElementById("txtIdIntentos").value);
 
- while(numero < 100){
-   console.log (numero)
-   contador++
+ if (numero ==)
  }
  alert ("ganaste")
 
